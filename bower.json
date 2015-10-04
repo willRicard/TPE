@@ -1,0 +1,13 @@
+{
+  "name": "tpe",
+  "version": "0.0.0",
+  "authors": [
+    "Guillaume Ricard <guillaume.ricard@mail.com>",
+    "Josselin Doc"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "material-design-lite": "~1.0.5",
+    "page": "visionmedia/page.js#~1.6.3"
+  }
+}
