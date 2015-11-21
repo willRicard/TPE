@@ -24,7 +24,7 @@ body {
 .nanoparticules-dor {
 	height: 438px;
 	color: white;
-	background: url("img/nanoparticules_dor.webp") center / cover;
+	background: url("img/nanoparticules_dor.jpg") center / cover;
 }
 	</style>
 </head>
@@ -83,16 +83,36 @@ body {
 							<div id="carousel" class="carousel slide" data-ride="carousel">
 								<div class="carousel-inner" role="listbox">
 									<div class="item active">
-										<img src="img/microscope_rebond.webp">
+										<picture>
+											<source srcset="img/microscope_rebond.webp" type="image/webp"/>
+											<source srcset="img/microscope_rebond.jpg" type="image/jpeg"/>
+											<source srcset="img/microscope_rebond.jxr" type="image/vnd.ms-photo"/>
+											<img src="img/microscope_rebond.jpg">
+										</picture>
 									</div>
 									<div class="item">
-										<img src="img/microscope_traverse.webp"/>
+										<picture>
+											<source srcset="img/microscope_traverse.webp" type="image/webp"/>
+											<source srcset="img/microscope_traverse.jpg" type="image/jpeg"/>
+											<source srcset="img/microscope_traverse.jxr" type="image/vnd.ms-photo"/>
+											<img src="img/microscope_traverse.webp"/>
+										</picture>
 									</div>
 									<div class="item">
-										<img src="img/microscope_arrache.webp"/>
+										<picture>
+											<source srcset="img/microscope_arrache.webp" type="image/webp"/>
+											<source srcset="img/microscope_arrache.jpg" type="image/jpeg"/>
+											<source srcset="img/microscope_arrache.jxr" type="image/vnd.ms-photo"/>
+											<img src="img/microscope_arrache.webp"/>
+										</picture>
 									</div>
 									<div class="item">
-										<img src="img/microscope_image.webp"/>
+										<picture>
+											<source srcset="img/microscope_image.webp" type="image/webp"/>
+											<source srcset="img/microscope_image.jpg" type="image/jpeg"/>
+											<source srcset="img/microscope_image.jxr" type="image/vnd.ms-photo"/>
+											<img src="img/microscope_image.webp"/>
+										</picture>
 									</div>
 								</div>
 								<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
@@ -151,7 +171,12 @@ body {
 							<h1 class="mdl-card__title-text">Recherches Google concernant les nanotechnologies (2005 - 2015)</h1>
 						</div>
 						<div class="mdl-card__supporting-text">
-							<img src="img/risques_trends_nanotechnologies.webp"/>
+							<picture>
+								<source srcset="img/risques_trends_nanotechnologies.webp" type="image/webp"/>
+								<source srcset="img/risques_trends_nanotechnologies.jpg" type="image/jpeg"/>
+								<source srcset="img/risques_trends_nanotechnologies.jxr" type="image/vnd.ms-photo"/>
+								<img src="img/risques_trends_nanotechnologies.webp"/>
+							</picture>
 							<p>L'intérêt du public se fait moindre envers les nanotechnologies. Les lettres marquent la publication d'articles corrélés avec la courbe.</p>
 						</div>
 						<div class="mdl-card__actions mdl-card--border">
@@ -170,7 +195,15 @@ body {
 				<p>&copy; 2015 - Guillaume Ricard &lt;<a href="mailto:guillaume.ricard@mail.com">guillaume.ricard@mail.com</a>&gt;, Josselin Doc &lt;<a href="mailto:josselin.doc@gmail.com">josselin.doc@gmail.com</a>&gt;</p>
 			</div>
 			<div class="mdl-mini-footer__right-section">
-				<button class="mdl-mini-footer__social-btn"><a target="_blank" href="http://www.lyc-timbaud-bretigny.fr"><img src="img/logo.webp" alt="Lycée Jean-Pierre Timbaud"/></a></button>
+				<button class="mdl-mini-footer__social-btn">
+					<a target="_blank" href="http://www.lyc-timbaud-bretigny.fr">
+						<picture>
+							<source srcset="img/logo.webp" type="image/webp"/>
+							<source srcset="img/logo.png" type="image/png"/>
+							<img src="img/logo.webp" alt="Lycée Jean-Pierre Timbaud"/>
+						</picture>
+					</a>
+				</button>
 			</div>
 		</footer>
 	</div>
