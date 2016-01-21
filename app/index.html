@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-encoding" charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css"/>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<script src="bower_components/material-design-lite/material.min.js"></script>
 	<title>TPE - Les nanotechnologies</title>
 	<style>
@@ -50,7 +50,8 @@ body {
 					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 						<div class="mdl-card__supporting-text">
 							<p class="quarante">40</p>
-							<p><b>instituts</b> mènent des recherches sur les nanotechnologies en France. on peut compter parmi cela l’Ecole Normale Supérieure ou l’Inserm. Les nano-particules seraient même présentes dans près de 1000 produits de consommation aujourd’hui en France.</p>
+							<p><b>instituts</b> dont 8 principaux mènent des recherches sur les nanotechnologies en France. on peut compter parmi cela l’Ecole Normale Supérieure ou l’Inserm (CNRS). Les nano-particules seraient même présentes dans près de 1000 produits de consommation aujourd’hui en France.</p>
+							<img src="img/acteurs_academiques.webp"/>
 						</div>
 						<div class="mdl-card__actions mdl-card--border">
 							<p><b>Source :</b> Banque d'Informations sur les Recherches - <a href="http://bir.inserm.fr">bis.inserm.fr</a></p>
@@ -62,10 +63,10 @@ body {
 					<div class="mdl-cell mdl-cell--1-col"></div>
 					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 						<div class="mdl-card__title">
-							<h1 class="mdl-card__title-text">Définition</h1>
+							<h2 class="mdl-card__title-text">Définition</h2>
 						</div>
 						<div class="mdl-card__supporting-text">
-							<p>Les nanotechnologies sont l’ensemble des domaines d’étude scientifiques et de fabrication de structures à l’échelle du nanomètre (de 1 à 1000 nm), c'est-à-dire à l’échelle atomique. Ces structures sont appelées nano-objets.  </p>
+							<p>Les nanotechnologies sont l’ensemble des domaines d’étude scientifiques et de fabrication de structures à l’échelle du nanomètre (de 1 à 1000 nm), c'est-à-dire à l’échelle atomique. Ces structures sont appelées nano-objets.</p>
 						</div>
 						<div class="mdl-card__actions mdl-card--border">
 							<p><b>Source :</b> <em>Encyclopédie Larousse</em> - <a href="http://larousse.fr">larousse.fr</a></p>
@@ -77,41 +78,73 @@ body {
 					<div class="mdl-cell mdl-cell--1-col"></div>
 					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 						<div class="mdl-card__title">
-							<h1 class="mdl-card__title-text">Le microscope à effet tunnel</h1>
+							<h2 class="mdl-card__title-text">Le microscope à effet tunnel</h2>
 						</div>
 						<div class="mdl-card__supporting-text">
 							<div id="carousel" class="carousel slide" data-ride="carousel">
 								<div class="carousel-inner" role="listbox">
 									<div class="item active">
 										<picture>
-											<source srcset="img/microscope_rebond.webp" type="image/webp"/>
-											<source srcset="img/microscope_rebond.jpg" type="image/jpeg"/>
-											<source srcset="img/microscope_rebond.jxr" type="image/vnd.ms-photo"/>
-											<img src="img/microscope_rebond.jpg">
+											<source type="image/webp" sizes="80vw"
+												srcset="img/320/microscope_rebond.webp 320w,
+														img/640/microscope_rebond.webp 640w,
+														img/1280/microscope_rebond.webp 1280w"/>
+											<source type="image/vnd.ms-photo" sizes="80vw"
+												srcset="img/320/microscope_rebond.jxr 320w,
+														img/640/microscope_rebond.jxr 640w,
+														img/1280/microscope_rebond.jxr 1280w"/>
+											<img sizes="80vw"
+												srcset="img/320/microscope_rebond.jpg 320w,
+														img/640/microscope_rebond.jpg 640w,
+														img/1280/microscope_rebond.jpg 1280w">
 										</picture>
 									</div>
 									<div class="item">
 										<picture>
-											<source srcset="img/microscope_traverse.webp" type="image/webp"/>
-											<source srcset="img/microscope_traverse.jpg" type="image/jpeg"/>
-											<source srcset="img/microscope_traverse.jxr" type="image/vnd.ms-photo"/>
-											<img src="img/microscope_traverse.jpg"/>
+											<source type="image/webp" sizes="80vw"
+												srcset="img/320/microscope_traverse.webp 320w,
+														img/640/microscope_traverse.webp 640w,
+														img/1280/microscope_traverse.webp 1280w"/>
+											<source type="image/vnd.ms-photo" sizes="80vw"
+												srcset="img/320/microscope_traverse.jxr 320w,
+														img/640/microscope_traverse.jxr 640w,
+														img/1280/microscope_traverse.jxr 1280w"/>
+											<img sizes="80vw"
+												srcset="img/320/microscope_traverse.jpg 320w,
+														img/640/microscope_traverse.jpg 640w,
+														img/1280/microscope_traverse.jpg 1280w"/>
 										</picture>
 									</div>
 									<div class="item">
 										<picture>
-											<source srcset="img/microscope_arrache.webp" type="image/webp"/>
-											<source srcset="img/microscope_arrache.jpg" type="image/jpeg"/>
-											<source srcset="img/microscope_arrache.jxr" type="image/vnd.ms-photo"/>
-											<img src="img/microscope_arrache.jpg"/>
+											<source type="image/webp" sizes="80vw"
+												srcset="img/320/microscope_arrache.webp 320w,
+														img/640/microscope_arrache.webp 640w,
+														img/1280/microscope_arrache.webp 1280w"/>
+											<source type="image/vnd.ms-photo" sizes="80vw"
+												srcset="img/320/microscope_arrache.jxr 320w,
+														img/640/microscope_arrache.jxr 640w,
+														img/1280/microscope_arrache.jxr 1280w"/>
+											<img sizes="80vw"
+												srcset="img/320/microscope_arrache.jpg 320w,
+														img/640/microscope_arrache.jpg 640w,
+														img/1280/microscope_arrache.jpg 1280w"/>
 										</picture>
 									</div>
 									<div class="item">
 										<picture>
-											<source srcset="img/microscope_image.webp" type="image/webp"/>
-											<source srcset="img/microscope_image.jpg" type="image/jpeg"/>
-											<source srcset="img/microscope_image.jxr" type="image/vnd.ms-photo"/>
-											<img src="img/microscope_image.jpg"/>
+											<source type="image/webp" sizes="80vw"
+												srcset="img/320/microscope_image.webp 320w,
+														img/640/microscope_image.webp 640w,
+														img/1280/microscope_image.webp 1280w"/>
+											<source type="image/vnd.ms-photo" sizes="80vw"
+												srcset="img/320/microscope_image.jxr 320w,
+														img/640/microscope_image.jxr 640w,
+														img/1280/microscope_image.jxr 1280w"/>
+											<img sizes="80vw"
+												srcset="img/320/microscope_image.jpg 320w,
+														img/640/microscope_image.jpg 640w,
+														img/1280/microscope_image.jpg 1280w"/>
 										</picture>
 									</div>
 								</div>
@@ -134,13 +167,38 @@ body {
 					<div class="mdl-cell mdl-cell--1-col"></div>
 					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 						<div class="mdl-card__title">
-							<h1 class="mdl-card__title-text">Définition</h1>
+							<h2 class="mdl-card__title-text">Définition</h2>
 						</div>
 						<div class="mdl-card__supporting-text">
 							<p>Une maladie est une altération physique ou mentale d'un être vivant dont la cause est connue, par opposition au mot syndrome.</p>
 						</div>
 						<div class="mdl-card__actions mdl-card--border">
 							<p><b>Source :</b> <em>Encyclopédie Larousse</em> - <a href="http://larousse.fr">larousse.fr</a></p>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Maladies infectieuses</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>Une maladie infectieuse est causée par l'entrée de micro-organismes pathogènes dans l'organisme : c'est l'<b>infection</b>. Ses symptômes sont très variables, de même que les agents pathogènes en cause.<br/>
+							Ceux-ci peuvent être des <b>bactéries</b>, des <b>virus</b>, plus rarement des <b>protozoaires</b> ou des <b>champignons</b>.<br/>
+							Pour arrêter la maladie, il suffit d'en détruire la cause.</p>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Cancers</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>Un cancer est une <b>tumeur</b> due à la prolifération anormale de cellules au sein d’un tissu. Cette multiplication anarchique est due à des <b>mutations</b> dans leur A.D.N. On peut classifier les cancers en 3 catégories mais les méthodes que nous étudierons concerneront la majorité des cancers puisqu’elles s’adressent aux tumeurs solides par opposition aux cancers sanguins plus diffus dans l’organisme (ie. <b>leucémies</b>).</p>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<p><b>Source :</b> Institut National du Cancer (INC) - <a href="http://www.e-cancer.fr/Comprendre-prevenir-depister/Qu-est-ce-qu-un-cancer/Le-ou-les-cancers">www.e-cancer.fr</a></p>
 						</div>
 					</div>
 					<div class="mdl-cell mdl-cell--1-col"></div>
@@ -152,7 +210,34 @@ body {
 						<div class="mdl-cell mdl-cell--1-col"></div>
 						<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 							<div class="mdl-card__title">
-								<h1 class="mdl-card__title-text">Émulsion huile-eau</h1>
+								<h2 class="mdl-card__title-text">Nano-médicaments ?</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<picture>
+									<source type="image/webp" srcset="img/distribution_principe_actif.webp"/>
+									<source type="image/vnd.ms-photo" srcset="img/distribution_principe_actif.jxr"/>
+									<img src="img/distribution_principe_actif.jpg"/>
+								</picture>
+								<p>Lors de l'absorption orale d'un médicament traditionnel, le principe actif est amené par la digestion jusqu'aux intestins où il passe dans le sang : la distribution du principe actif dans le corps est aléatoire et s'effectue via la circulation sanguine. Le principe actif se retrouve dispersé dans tout l'organisme et seule une petite partie atteint l'organe ciblé. Dans le cas de certains médicaments, notamment en chimiothérapie, les résidus de principe actif peuvent être dangereux pour le reste de l'organisme.</p>
+								<picture>
+									<source type="image/webp" srcset="img/vectorisation.webp">
+									<source type="image/vnd.ms-photo" srcset="img/vectorisation.jxr">
+									<img src="img/vectorisation.jpg"/>
+								</picture>
+								<p>Les nanomédicaments apportent une solution à ce problème à travers la <b>vectorisation</b>.<br/>
+									La vectorisation est une opération qui consiste à  moduler et si possible totalement contrôler la <b>distribution</b> d’un principe actif en l’associant à un <b>vecteur</b>.
+									Ce vecteur est le plus souvent un virus (inerte) à la surface duquel on place des marqueurs organiques ciblant les différents types de cellules.
+								</p>
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<p><b>Source :</b> Présentations du Dr Elias FATTAL (<a href="http://www.nanomedoc.com">www.nanomedoc.com</a>)</p>
+							</div>
+						</div>
+						<div class="mdl-cell mdl-cell--1-col"></div>
+						<div class="mdl-cell mdl-cell--1-col"></div>
+						<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Émulsion huile-eau</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
 								<p>Nous avons réalisé une expérience pour produire une émulsion afin de modéliser la création de nanomédicaments.</p>
@@ -167,10 +252,13 @@ body {
 						<div class="mdl-cell mdl-cell--1-col"></div>
 						<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 							<div class="nanoparticules-dor mdl-card__title">
-								<h1 class="mdl-card__title-text">Nanoparticules d'or</h1>
+								<h2 class="mdl-card__title-text">Nanoparticules d'or</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
-								<p>Ces nanoparticules d'or radioactives, produites par le réacteur de recherche de l'université de Missouri-Columbia ont été utilisées dans une expérience visant à mettre au point un traitement pour détruire des cellules cancéreuses.</p>
+								<p>
+									Ces nanoparticules d'or radioactives, produites par le réacteur de recherche de l'université de Missouri-Columbia ont été utilisées dans une expérience visant à mettre au point un traitement pour détruire des cellules cancéreuses.<br/>
+									Cette expérience illustre le principe de vectorisation : ici, un composé organique issu de feuilles de thé a joué le rôle de marqueur pour les cellules du cancer de la prostate; le principe actif était l'or radioactif ().
+								</p>
 							</div>
 							<div class="mdl-card__actions mdl-card--border">
 								<p><b>Sources :</b></p>
@@ -186,10 +274,10 @@ body {
 						<div class="mdl-cell mdl-cell--1-col"></div>
 						<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 							<div class="mdl-card__title">
-								<h1 class="mdl-card__title-text">Faisceau de neutrons</h1>
+								<h2 class="mdl-card__title-text">Faisceau de neutrons</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
-								<p></p>
+								<p>&hellip;</p>
 							</div>
 							<div class="mdl-card__actions mdl-card--border">
 								<p><b>Source :</b> &hellip;</p>
@@ -209,7 +297,6 @@ body {
 						<div class="mdl-card__supporting-text">
 							<picture>
 								<source srcset="img/risques_trends_nanotechnologies.webp" type="image/webp"/>
-								<source srcset="img/risques_trends_nanotechnologies.jpg" type="image/jpeg"/>
 								<source srcset="img/risques_trends_nanotechnologies.jxr" type="image/vnd.ms-photo"/>
 								<img src="img/risques_trends_nanotechnologies.jpg"/>
 							</picture>
@@ -223,7 +310,18 @@ body {
 				</div>
 			</section>
 			<section class="mdl-layout__tab-panel" id="conclusion">
-				<div class="page-content">The END!</div>
+				<div class="page-content mdl-grid">
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Conclusion</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<h1>&hellip;</h1>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+				</div>
 			</section>
 		</main>
 		<footer class="mdl-mini-footer">
