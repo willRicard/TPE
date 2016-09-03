@@ -3,28 +3,41 @@
 <head>
 	<meta http-equiv="Content-encoding" charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
-	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css"/>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<script src="bower_components/material-design-lite/material.min.js"></script>
+	<script async src="bower_components/material-design-lite/material.min.js"></script>
 	<title>TPE - Les nanotechnologies</title>
 	<style>
 body {
 	font-family: "Roboto", "Helvetica";
 }
-.quarante {
+p {
+	text-align: justify;
+}
+.treize, .problematique {
+	text-align: center;
+	font-weight: bold;
+	color: #fe3f81;
+}
+.treize {
 	margin-top: 16px;
 	margin-right: 16px;
 	float: left;
-	color: #fe3f81;
 	text-align: center;
 	font-size: 64px;
-	font-weight: bold;
+
 }
-.nanoparticules-dor {
+.problematique {
+	font-weight: bold;
+	font-size: xx-large;
+	width: 100%;
+}
+.nanoparticules-dor > .mdl-card__title {
 	height: 438px;
 	color: white;
 	background: url("img/nanoparticules_dor.jpg") center / cover;
+}
+.superscript {
+	vertical-align: super;
+	font-size: x-small;
 }
 	</style>
 </head>
@@ -49,16 +62,23 @@ body {
 					<div class="mdl-cell mdl-cell--1-col"></div>
 					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
 						<div class="mdl-card__supporting-text">
-							<p class="quarante">40</p>
-							<p><b>instituts</b> dont 8 principaux mènent des recherches sur les nanotechnologies en France. on peut compter parmi cela l’Ecole Normale Supérieure ou l’Inserm (CNRS). Les nano-particules seraient même présentes dans près de 1000 produits de consommation aujourd’hui en France.</p>
-							<img src="img/acteurs_academiques.webp"/>
+							<p class="treize">13</p>
+							<p><b>instituts</b> mènent des recherches sur les nanotechnologies en France. on peut compter parmi cela l’Ecole Normale Supérieure ou l’Inserm (CNRS). Les nano-particules seraient même présentes dans près de 1000 produits de consommation aujourd’hui en France.</p>
+							<picture>
+								<source type="image/webp" srcset="img/acteurs_academiques.webp"/>
+								<source type="image/vnd.ms-photo" srcset="img/acteurs_academiques.jxr"/>
+								<img src="img/acteurs_academiques.jpg"/>
+							</picture>
 						</div>
 						<div class="mdl-card__actions mdl-card--border">
-							<p><b>Source :</b> Banque d'Informations sur les Recherches - <a href="http://bir.inserm.fr">bis.inserm.fr</a></p>
+							<p><b>Source :</b> Banque d'Informations sur les Recherches - <a href="http://bir.inserm.fr">bir.inserm.fr</a></p>
 						</div>
 					</div>
 					<div class="mdl-cell mdl-cell--1-col"></div>
 				</div>
+				<hr/>
+				<p class="problematique">Comment les nanotechnologies permettent-elles de traiter certaines pathologies ?</p>
+				<hr/>
 				<div class="mdl-grid">
 					<div class="mdl-cell mdl-cell--1-col"></div>
 					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
@@ -213,12 +233,18 @@ body {
 								<h2 class="mdl-card__title-text">Nano-médicaments ?</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
-								<picture>
-									<source type="image/webp" srcset="img/distribution_principe_actif.webp"/>
-									<source type="image/vnd.ms-photo" srcset="img/distribution_principe_actif.jxr"/>
-									<img src="img/distribution_principe_actif.jpg"/>
-								</picture>
-								<p>Lors de l'absorption orale d'un médicament traditionnel, le principe actif est amené par la digestion jusqu'aux intestins où il passe dans le sang : la distribution du principe actif dans le corps est aléatoire et s'effectue via la circulation sanguine. Le principe actif se retrouve dispersé dans tout l'organisme et seule une petite partie atteint l'organe ciblé. Dans le cas de certains médicaments, notamment en chimiothérapie, les résidus de principe actif peuvent être dangereux pour le reste de l'organisme.</p>
+								<div class="mdl-grid">
+									<div class="mdl-cell mdl-cell--3-col">
+										<picture>
+											<source type="image/webp" srcset="img/distribution_principe_actif.webp"/>
+											<source type="image/vnd.ms-photo" srcset="img/distribution_principe_actif.jxr"/>
+											<img src="img/distribution_principe_actif.jpg"/>
+										</picture>
+									</div>
+									<div class="mdl-cell mdl-cell--9-col">
+										<p>Lors de l'absorption orale d'un médicament traditionnel, le principe actif est amené par la digestion jusqu'aux intestins où il passe dans le sang : la distribution du principe actif dans le corps est aléatoire et s'effectue via la circulation sanguine. Le principe actif se retrouve dispersé dans tout l'organisme et seule une petite partie atteint l'organe ciblé. Dans le cas de certains médicaments, notamment en chimiothérapie, les résidus de principe actif peuvent être dangereux pour le reste de l'organisme.</p>
+									</div>
+								</div>
 								<picture>
 									<source type="image/webp" srcset="img/vectorisation.webp">
 									<source type="image/vnd.ms-photo" srcset="img/vectorisation.jxr">
@@ -228,6 +254,7 @@ body {
 									La vectorisation est une opération qui consiste à  moduler et si possible totalement contrôler la <b>distribution</b> d’un principe actif en l’associant à un <b>vecteur</b>.
 									Ce vecteur est le plus souvent un virus (inerte) à la surface duquel on place des marqueurs organiques ciblant les différents types de cellules.
 								</p>
+								<p><b>Exemple :</b> La <em>doxorubicine</em>, toxique pour le coeur, existe en version standard et en vesion vectorisée.</p>
 							</div>
 							<div class="mdl-card__actions mdl-card--border">
 								<p><b>Source :</b> Présentations du Dr Elias FATTAL (<a href="http://www.nanomedoc.com">www.nanomedoc.com</a>)</p>
@@ -240,24 +267,43 @@ body {
 								<h2 class="mdl-card__title-text">Émulsion huile-eau</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
-								<p>Nous avons réalisé une expérience pour produire une émulsion afin de modéliser la création de nanomédicaments.</p>
+								<video controls>
+									<source src="video/emulsion.webm"/>
+									<source src="video/emulsion.ogv"/>
+									<source src="video/emulsion.mp4"/>
+								</video>
+								<p>Nous avons réalisé une expérience pour produire une émulsion afin de modéliser la création de nano-médicaments.</p>
+								<picture>
+									<source type="imgage/webp" sizes="50vw"
+										srcset="img/320/emulsion_huile_eau.webp 320w,
+														img/640/emulsion_huile_eau.webp 640w,
+														img/1280/emulsion_huile_eau.webp 1280w"/>
+									<source type="image/vnd.ms-photo" sizes="50vw"
+										srcset="img/320/emulsion_huile_eau.jxr 320w,
+														img/640/emulsion_huile_eau.jxr 640w,
+														img/1280/emulsion_huile_eau.jxr 1280w"/>
+									<img sizes="50vw"
+										srcset="img/320/emulsion_huile_eau.jpg 320w,
+														img/640/emulsion_huile_eau.jpg 640w,
+														img/1280/emulsion_huile_eau.jpg 1280w">
+								</picture>
 							</div>
 							<div class="mdl-card__actions">
-								<p><b>Source :</b> &hellip;</p>
+								<p><b>Source :</b> Observation au microscope d'une émulsion huile-eau, grossissement x100</p>
 							</div>
 						</div>
 						<div class="mdl-cell mdl-cell--1-col"></div>
 					</div>
 					<div class="mdl-grid">
 						<div class="mdl-cell mdl-cell--1-col"></div>
-						<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
-							<div class="nanoparticules-dor mdl-card__title">
+						<div class="nanoparticules-dor mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
 								<h2 class="mdl-card__title-text">Nanoparticules d'or</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
 								<p>
 									Ces nanoparticules d'or radioactives, produites par le réacteur de recherche de l'université de Missouri-Columbia ont été utilisées dans une expérience visant à mettre au point un traitement pour détruire des cellules cancéreuses.<br/>
-									Cette expérience illustre le principe de vectorisation : ici, un composé organique issu de feuilles de thé a joué le rôle de marqueur pour les cellules du cancer de la prostate; le principe actif était l'or radioactif ().
+									Cette expérience illustre le principe de vectorisation : ici, un composé organique issu de feuilles de thé a joué le rôle de marqueur pour les cellules du cancer de la prostate; le principe actif était l'or radioactif (<span class="superscript">198</span>Au).
 								</p>
 							</div>
 							<div class="mdl-card__actions mdl-card--border">
@@ -277,10 +323,21 @@ body {
 								<h2 class="mdl-card__title-text">Faisceau de neutrons</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
-								<p>&hellip;</p>
+								<picture>
+									<source type="image/webp" srcset="img/faisceau_de_neutrons.webp"/>
+									<source type="image/vnd.ms-photo" srcset="img/faisceau_de_neutrons.jxr"/>
+									<img src="img/faisceau_de_neutrons.jpg">
+								</picture>
+								<p>Une seconde thérapie développée par plusieurs universités américaines (Wayne, Washington, Illinois du nord) permet un traitement localisé des tumeurs.
+								En bombardant les cellules avec un faisceau de neutrons, leur A.D.N. est ionisé ce qui perturbe le fonctionnement de la cellule, qui disparaît finalement. Les neutrons étant des particules à charge neutre, ils perdent moins d’énergie par collisions électroniques et sont plus efficaces pour parvenir jusqu’au noyau des cellules cibles.<br/>
+								Ainsi sont-ils quatre fois plus performants que les rayons X.</p>
 							</div>
 							<div class="mdl-card__actions mdl-card--border">
-								<p><b>Source :</b> &hellip;</p>
+								<p><b>Sources :</b></p>
+								<ul>
+									<li>By Steven3045 at <a href="http://en.wikipedia.org">English Wikipedia</a> [Public domain], via <a href="http://commons.wikimedia.org">Wikimedia Commons</a></li>
+									<li><em>International Journal of Radiation Oncology • Biology • Physics</em>, n°49 p. 251-260</li>
+								</ul>
 							</div>
 						</div>
 						<div class="mdl-cell mdl-cell--1-col"></div>
@@ -307,6 +364,16 @@ body {
 						</div>
 					</div>
 					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--10-col mdl-cell mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h3 class="mdl-card__title-text">Un usage réglementé</h3>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>Des normes de sécurité ont été établies pour encadrer la nano-médecine. Tout nano-médicament doit pouvoir être dégradé par l'organisme humain sous 3 jours.</p>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
 				</div>
 			</section>
 			<section class="mdl-layout__tab-panel" id="conclusion">
@@ -317,7 +384,34 @@ body {
 							<h2 class="mdl-card__title-text">Conclusion</h2>
 						</div>
 						<div class="mdl-card__supporting-text">
-							<h1>&hellip;</h1>
+							<p>Au cours de cette présentation nous avons vu que les nanotechnologies apportaient différentes solutions innovantes pour traiter des maladies. Toutefois elles inquiètent le grand public à cause des risques sanitaires qu'elles apportent. A l'avenir la science saura certainement faire progresser les nanotechnologies en étudiant leurs effets d'une part et en développant des technologies plus sûres.</p>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--1-col"></div>
+					<div class="mdl-cell mdl-cell--10-col mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Bibliographie</h2>
+						</div>
+						<div class="mdl-card__text-content">
+							<ul>
+							<li>Revues :
+								<ul>
+									<li>Proceedings of the National Academy of Science, n°109 - <a href="http://www.pnas.org/content/109/31/12426.full">www.pnas.org</a></li>
+									<li>International Journal of Radiation Oncology • Biology • Physics, n°49 p. 251-260</li>
+								</ul>
+							</li>
+							<li>Sites web:
+								<ul>
+									<li>Banque d'information sur les recherches : <a href="http://bir.inserm.fr">bir.inserm.fr</a> → [Equipes/Activités] → Recherche "nano"</li>
+									<li>Encyclopédie Larousse : <a href="http://larousse.fr">larousse.fr</a>, définitions <a href="http://larousse.fr/dictionnaires/francais/nanotechnologie/53751">"nanotechnologie"</a> et <a href="http://larousse.fr/dictionnaires/francais/maladie/48809">"maladie"</a></li>
+									<li>Wikimedia Commons : <a href="https://commons.wikimedia.org/wiki/File:Effet_tunnel_quantique_et_principe_du_microscope_%C3%A0_effet_tunnel.ogv">Animation microscope à effet tunnel</a>, par Jubobroff | <a href="https://commons.wikimedia.org/wiki/File:DNA-Interaction.png">Interaction des neutrons avec l'ADN</a>, par Steven3045</li>
+									<li>Institut national du cancer : <a href="http://www.e-cancer.fr/Comprendre-prevenir-depister/Qu-est-ce-qu-un-cancer/Le-ou-les-cancers">www.e-cancer.fr/Comprendre-prevenir-depister/Qu-est-ce-qu-un-cancer/Le-ou-les-cancers</a></li>
+									<li>Site du professeur Elias FATTAL : <a href="http://www.nanomedoc.com">www.nanomedoc.com</a></li>
+									<li>Le Figaro Santé (en ligne) 16/07/2012 - <a href="http://sante.lefigaro.fr/actualite/2012/07/16/18647-nanoparticules-dor-contre-cancer-prostate">sante.lefigaro.fr/actualite/2012/07/16/18647-nanoparticules-dor-contre-cancer-prostate</a></li>
+									<li>Google Trends → Recherche "Nanotechnologies"</li>
+								</ul>
+							</li>
 						</div>
 					</div>
 					<div class="mdl-cell mdl-cell--1-col"></div>
@@ -326,21 +420,32 @@ body {
 		</main>
 		<footer class="mdl-mini-footer">
 			<div class="mdl-mini-footer__left-section">
-				<p>&copy; 2015 - Guillaume Ricard &lt;<a href="mailto:guillaume.ricard@mail.com">guillaume.ricard@mail.com</a>&gt;, Josselin Doc &lt;<a href="mailto:josselin.doc@gmail.com">josselin.doc@gmail.com</a>&gt;</p>
+				<p>
+					&copy; 2015 - Guillaume Ricard
+					<a href="mailto:guillaume.ricard@mail.com">
+						<i class="material-icons">email</i>
+					</a>
+					, Josselin Doc
+					<a href="mailto:josselin.doc@gmail.com">
+						<i class="material-icons">email</i>
+					</a>
+				</p>
 			</div>
 			<div class="mdl-mini-footer__right-section">
-				<button class="mdl-mini-footer__social-btn">
-					<a target="_blank" href="http://www.lyc-timbaud-bretigny.fr">
-						<picture>
-							<source srcset="img/logo.webp" type="image/webp"/>
-							<source srcset="img/logo.png" type="image/png"/>
-							<img src="img/logo.png" alt="Lycée Jean-Pierre Timbaud"/>
-						</picture>
-					</a>
-				</button>
+				<a class="mdl-mini-footer__social-btn" target="_blank" href="http://www.lyc-timbaud-bretigny.fr">
+					<picture>
+						<source srcset="img/logo.webp" type="image/webp"/>
+						<source srcset="img/logo.png" type="image/png"/>
+						<img src="img/logo.png" alt="Lycée Jean-Pierre Timbaud"/>
+					</picture>
+				</a>
 			</div>
 		</footer>
 	</div>
+	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css"/>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script>

@@ -1,6 +1,6 @@
 {
   "name": "tpe",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Sujet : Les nanotechnologies",
   "author": "Guillaume Ricard <guillaume.ricard@mail.com>",
   "contributors": [
@@ -8,8 +8,5 @@
       "name": "Josselin Doc"
     }
   ],
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.13.3"
-  }
+  "license": "MIT"
 }
